@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor0: #940707;
+    --cor1: #d9d9d9;
+    --cor2: #77b513;
+    --cor3: #4a0000;
+    --cor4: #ababab;
+    --fonte: url("RuRubikMoonrocks-Regular.ttf")
+
+}
+
+
+body {
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor3), var(--cor0));
+    background-repeat: no-repeat;
+    height: 100%;
+ 
+    
+
+}
+
+
+#criarConta{
+    display: none;
+}
+
+
+
+header>h1 {
+    text-align: center;
+    color: white;
+    display: inline-block;
+    margin: 20px calc(50% - 250px) 0px;
+    width: 500px;
+    text-shadow: 10px 5px 10px rgba(0, 0, 0, 0.301);
+}
+
+main {
+    border: solid black 2px;
+    max-width: 60rem;
+    height: 600px;
+    margin: auto;
+    margin-top: 40px;
+  
+}
+
+
+
+
+#container-b img {
+    max-width: 100%;
+    max-height: 284px;
+    margin-top: 150px;
+}
+
+ .container{
+        display: flex;
+        padding: 0 !important;
+        box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.301) !important;
+       
+    }
+    
+
+
+div {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    
+}
+
+
+#container-a {
+    background-color: var(--cor1);
+    border: solid 2px black;
+
+}
+
+#container-b {
+    background-color: white;
+    border: solid 2px black;
+    
+}
+
+#cadastro {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 120px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.233);
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+
+#login input{
+    text-align: center;
+    background-color: #ababab; 
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+#login  button{
+    background-color: #830101;
+    width: 100%;
+}
+
+footer {
+    background-color: transparent;
+    margin: 4rem 0rem 0rem 0rem;
+    width: 100%;
+    padding: 10px 0px 5px 0px;
+    text-align: center;
+}
+
+footer > p {
+    margin: 0px 0px 13px 0px;
+    color: white;
+}
+
+footer > p > img {
+    max-width: 20px;
+}
+
+#EtecImg{
+    display: none;
+}
+
+
+@media screen and (max-width:991px) {
+
+    main {
+        border: none !important
+    }
+    
+}
+
+@media screen and (max-width : 576px) {
+
+    #login input{
+        
+        width: auto;
+    }
+ 
+    
+}
+
+@media screen and (max-width : 576px) {
+
+     
+    #container-b{
+        
+        display: none;
+    }
+
+    #container-a{
+        width: 100%;
+        margin: 10px;
+        background-color: white;
+   
+    }
+
+    #login input{
+        background-color:rgb(200, 200, 200);
+        color: white !important;
+        position: relative;
+    }
+ 
+
+    #container-b img{
+        display: flex !important;
+    }
+
+
+    #EtecImg{
+        display: inline-block;
+        width: 10rem;
+        position: absolute;
+        top: 143px;
+
+    }
+
+    #criarConta{
+        display: inline;
+    }
+ 
+
+    footer{
+        background-image: none;
+    }
+
+ 
+    
+}
+
+
+
+
